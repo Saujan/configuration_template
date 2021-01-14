@@ -1,0 +1,23 @@
+---
+#run chamber secure. Your settings file will have an encrypted value:
+# to read Chamber.env.smtp_password
+development:
+  setting:                development_value
+  # The following will become 'secure_setting'
+  _secure_secure_setting: LrytAR2qiaOl+vTKoRWQrRD/OeCUxtCHp0l8ycDfrjHddgsEiK5qwGz5ANC6C3GE8pCNp3cpiltjkhiSzBnZQ9R/OdoMRxMKwPdvKcYvlrFlQCkDTfN7rLFsayC3el0etSVLPMgqIhWSsUarp9BW3G1+IWgwmfvzVl5pB0CqP+4f3jI+OHYlBUxeySBtjRJcGFPZKuO5+M4uIUMiuczPsz1XQYuXC+g8hQV390uqAF6bxZhuqkQrhy/kYEFfw5SO589ldTaYt3RphHLcZS5qtQaSL6LTymuzvtgB3xqX9Y4kknopY0KWXIw2IIh4DfjN4x1a18W3rh3bdvXWTnuzCw==
+  smtp_username: 'my_username_development'
+  smtp_password: 'my_password_development'
+
+test:
+  setting:                test_value
+  # The following will become 'secure_setting'
+  _secure_secure_setting: CuE96xOh1TkZejZ4KWFRRaPkwe5v8WCX/KXg6/a3VrmbhkyJGEfZiT/8yAWBbeWmWLmMcjiaJ3a5RJgGfOvdEQS12mGcjfx76pW9EQM6wIMOM6Q682n1KGonLHcojlTxzOi6RWlo7jkcvuJGhHeqOHITxO2fwl3OFaiTAN8L8GIt2GlaCWRjcd0QOdG1Ov7m+AMUAE5GLP20PlGUeUE6zIC1d9AtifHO3IfYeqjZg3z/kR3FsJkfCFc/Sie2dXzonEB6OA6XQC0fRzj9YkhmD/BuFGX9xnm/wguhU9sgoJ5otEqSnkD76GAQ3MkrsYunf6LC/3XTH37W/+SpLMonOw==
+  smtp_username: 'my_username_test'
+  smtp_password: 'my_password_test'
+
+production:
+  setting:                production_value
+  # The following will become 'secure_setting'
+  _secure_secure_setting: EubNrPfgI3vmydybcZLmooBkicQ8lu215Phq0SyXl55C6Me9op/NeXjpeaDX7P+ju0t9T5m9O1gNflL2uWo+X7bnEgzg4+19KEvsC5123m36a84yDHptEQeAsX2dYw2gRh0kry7i5uHMGYXsnHwf+++/dd88noaPDJeRPT0mVGD1TSH+q8QgEYk9ZM5iE7UlnPgNdyjIBOSr6eOfnUDkzoO9AeWEaLiL35VLmCq12rexsKqT5AeEuyaZjF8pbbHpXMum2H4BoASviDM95+vUuMF5glTBuMvwphIcTtv6JE2wu1ChRR/BkVi++Ryy/YwAk7KAdynypuPJZ5mDblTjTw==
+  smtp_username: 'my_username_production'
+  smtp_password: 'my_password_production'
