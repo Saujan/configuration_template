@@ -6,6 +6,10 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+#dotenv is initialized in your Rails app during the before_configuration callback, which is fired when the Application constant is defined in config/application.rb with class Application < Rails::Application. If you need it to be initialized sooner, you can manually call Dotenv::Railtie.load.
+Dotenv::Railtie.load
+puts ENV['APP_ENV']
+
 module Ministore
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
