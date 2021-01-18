@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ministore</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>ThewayShop - Ecommerce Bootstrap 4 HTML Template</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="<%= image_url('favicon.ico') %>" type="image/x-icon">
+    <link rel="apple-touch-icon" href="<%= image_url('apple-touch-icon.png') %>">
+    <!-- Bootstrap CSS -->
+    <%= stylesheet_link_tag  'bootstrap.min'%>
+    <!-- Site CSS -->
+    <%= stylesheet_link_tag  'style'%>
+    <!-- Responsive CSS -->
+    <%= stylesheet_link_tag  'responsive'%>
+    <!-- Custom CSS -->
+    <%= stylesheet_link_tag  'custom'%>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
 
   <body>
     <%= yield %>
   </body>
+  <!-- ALL JS FILES -->
+  <%= javascript_include_tag  'jquery-3.2.1.min'%>
+  <%= javascript_include_tag  'popper.min'%>
+  <%= javascript_include_tag  'bootstrap.min'%>
+  <%= javascript_include_tag  'jquery.superslides.min'%>
+  <%= javascript_include_tag  'bootstrap-select'%>
+  <%= javascript_include_tag  'inewsticker'%>
+  <%= javascript_include_tag  'bootsnav'%>
+  <%= javascript_include_tag  'images-loded.min'%>
+  <%= javascript_include_tag  'isotope.min'%>
+  <%= javascript_include_tag  'owl.carousel.min'%>
+  <%= javascript_include_tag  'baguetteBox.min'%>
+  <%= javascript_include_tag  'form-validator.min'%>
+  <%= javascript_include_tag  'contact-form-script'%>
+  <%= javascript_include_tag  'custom'%>
 </html>
