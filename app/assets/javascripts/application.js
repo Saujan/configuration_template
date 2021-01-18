@@ -1,0 +1,14 @@
+//= link jquery-3.2.1.min
+//= link popper.min
+//= link bootstrap.min
+//= link jquery.superslides.min
+//= link bootstrap-select
+//= link inewsticker
+//= link bootsnav
+//= link images-loded.min
+//= link isotope.min
+//= link owl.carousel.min
+//= link baguetteBox.min
+//= link form-validator.min
+//= link contact-form-script
+//= link custom
