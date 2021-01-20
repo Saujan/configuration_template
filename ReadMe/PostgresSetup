@@ -20,3 +20,11 @@ auth-methods : md5, trust etc
 
 ip_addr , netmask :
     1. The ip_addr and netmask fields specify either a specific IP address, or range of IP addresses, that are allowed to connect to the PostgreSQL serve
+
+Database configuration in database.yml file
+1. pool: maximum number of connections the pool may manage (default 5).
+2. idle_timeout: number of seconds that a connection will be kept unused in the pool before it is automatically disconnected (default 300 seconds). Set this to zero to keep connections forever.
+3. heckout_timeout: number of seconds to wait for a connection to become available before giving up and raising a timeout error (default 5 seconds).
+
+More on pool
+https://www.ashnik.com/everything-you-need-to-know-about-connection-pooling-in-postgres/
