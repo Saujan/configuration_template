@@ -1,0 +1,22 @@
+https://www.codementor.io/@engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb
+a) mac
+1. setup brew
+2. setup postgres -> brew install postgresql
+   Note. it automatically creates the user postgres
+3. psql postgres -> command that prompts to psql command line
+4. CREATE ROLE username WITH LOGIN PASSWORD 'quoted password' -> creates user with password
+5. CREATE DATABASE databasename;
+6. ALTER DATABASE database_name OWNER TO ubuntu; -> sets new owner of the database
+
+Other psql commands
+1. brew services start psql
+2. brew services restart psql
+3. brew services stop psql
+
+Edit pg_hba.conf
+auth-methods : md5, trust etc
+    1. md5  : asks for password for authentication before connection.
+    2. trust: allow connection without need of password
+
+ip_addr , netmask :
+    1. The ip_addr and netmask fields specify either a specific IP address, or range of IP addresses, that are allowed to connect to the PostgreSQL serve
