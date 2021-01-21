@@ -28,3 +28,20 @@ Database configuration in database.yml file
 
 More on pool
 https://www.ashnik.com/everything-you-need-to-know-about-connection-pooling-in-postgres/
+
+>> pg database dump and restore
+#dumping
+pg_dump -U db_user -W -F t db_name > /path/to/your/file/dump_name.tar
+db_user : database owner 
+-W: prompt for password
+-F : specify the dump file extension or dump file type
+-t : dump file will be tar file
+db_name: name of database to dump
+
+#restoring
+pg_restore -d db_name /path/to/your/file/dump_name.tar -c -U db_user
+-c to drop database objects before recreating them
+-C to create a database before restoring into it
+-e exit if an error has encountered
+-F format to specify the format of the archive
+
