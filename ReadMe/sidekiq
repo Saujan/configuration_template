@@ -1,0 +1,13 @@
+issues
+1)  uninitialized constant sidekiq worker
+    a)added gem and created worker file in app/workers
+    b) worker seems uninitialized (in rails console)
+    solution: ActiveSupport::Dependencies.autoload_paths did not contain worker path. For that, restart the spring
+    https://stackoverflow.com/questions/43795343/uninitialized-constant-sidekiq-worker/43816217
+
+
+2)Signal Handling
+ a) TTIN : kill -TTIN sidekiq_process -> backtraces the sidekiq threads
+ b) USR1 : kill -USR1 sidekiq_process -> stops taking the jobs , place new upcoming jobs in queues.
+ c) TERM : kill -TERM sidekiq_process -> first finishes the running jobs and stops the sidekiq
+ d) resume the terminated sidekiq how ? -> bundle exec sidekiq -P ~/temp/sidekiq.pid
