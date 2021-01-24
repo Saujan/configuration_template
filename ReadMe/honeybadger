@@ -1,0 +1,7 @@
+gem "honeybadger", "~> 4.0"
+bundle install
+bundle exec honeybadger install 30a79402
+
+Source
+https://dev.to/sylvance/monitoring-using-honeybadger-and-rails-activesupport-instrumentation-3074
+https://docs.honeybadger.io/
