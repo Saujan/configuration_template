@@ -1,2 +1,4 @@
 ---
 api_key: '30a79402'
+development:
+  report_data: true
