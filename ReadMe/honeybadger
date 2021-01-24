@@ -5,3 +5,7 @@ bundle exec honeybadger install 30a79402
 Source
 https://dev.to/sylvance/monitoring-using-honeybadger-and-rails-activesupport-instrumentation-3074
 https://docs.honeybadger.io/
+
+In order to notify in honeybadger for dev and test mode, setup in honeybadger.yml file.
+development:
+  report_data: true
