@@ -5,10 +5,11 @@ class LazyWorker
     def perform(lazy_type)
         case lazy_type
         when 'hard'
-            while true do
-                sleep 3
-                puts 'stuck in loop'
-            end
+            puts ssss
+            # while true do
+            #     sleep 3
+            #     puts 'stuck in loop'
+            # end
         when 'medium'
             sleep 5
             puts 'that was quite bit of work'
